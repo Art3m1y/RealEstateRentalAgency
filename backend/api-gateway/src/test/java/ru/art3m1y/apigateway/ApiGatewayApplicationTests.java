@@ -1,10 +1,10 @@
-package ru.Art3m1y.RealEstateRentalAgency;
+package ru.art3m1y.apigateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RealEstateRentalServiceApplicationTests {
+class ApiGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {
