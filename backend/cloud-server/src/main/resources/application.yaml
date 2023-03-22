@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${GITHUB_URI_FOR_CLOUD_CONFIG_SERVER}
+          username: ${GITHUB_USERNAME_FOR_CLOUD_CONFIG_SERVER}
+          password: ${GITHUB_TOKEN_FOR_CLOUD_CONFIG_SERVER}
+          default-label: main
+          clone-on-start: true
+          basedir: ${CLOUD_CONFIG_SERVER_BASEDIR}
