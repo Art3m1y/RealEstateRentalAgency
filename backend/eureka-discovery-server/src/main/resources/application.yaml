@@ -1,11 +1,11 @@
-spring:
-  application:
-    name: eureka-server
-  config:
-    import: configserver:http://localhost:8888
-
 server:
   port: 8765
+
+spring:
+  application:
+    name: eureka-serverr
+  config:
+    import: configserver:http://localhost:8888
 
 eureka:
   client:
@@ -13,3 +13,4 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://localhost:8765/eureka
+

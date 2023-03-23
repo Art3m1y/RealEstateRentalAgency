@@ -5,9 +5,3 @@ spring:
     import: configserver:http://localhost:8888
   profiles:
     active: client
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://localhost:9999/realms/real-estate-rental-agency-app/protocol/openid-connect/certs
